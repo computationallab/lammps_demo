@@ -1,7 +1,7 @@
 The repository provides a simple example of a LAMMPS simulation (the original example was brought from the official repository) in a Singularity container with a shell script for SLURM.
 
-- run_hpc.sh - the script for running on the lochness HPC cluster
-- run_bare.sh - the script for running on the bare metal version of LAMMPS
+- `run_hpc.sh` - the script for running on the lochness HPC cluster. Before submitting the job, don't forget to update your notification email address in the `--mail_user` argument
+- `run_bare.sh` - the script for running on the bare metal version of LAMMPS
 
 
 Useful links

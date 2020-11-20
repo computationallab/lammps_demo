@@ -2,7 +2,7 @@
 #SBATCH -J melt
 #SBATCH -o melt.stdout
 #SBATCH -e melt.stderr
-#SBATCH --mail-user mam323@njit.edu
+#SBATCH --mail-user UCID@njit.edu
 #SBATCH --mail-type=ALL
 #SBATCH --partition gor
 #SBATCH --mem-per-cpu=1G
@@ -14,3 +14,4 @@ rm -rf out
 mkdir out/
 
 mpirun -np ${SLURM_NTASKS} singularity exec /opt/site/singularity-apps/lammps/20200505/lammps-20200505-centos7-python3.6.9.sif lammps -i melt.in
+
