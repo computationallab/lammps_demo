@@ -1,0 +1,9 @@
+out/
+log.*
+*.stdout
+*.stderr
+
+# singularity
+*.sif
+*.simg
+
